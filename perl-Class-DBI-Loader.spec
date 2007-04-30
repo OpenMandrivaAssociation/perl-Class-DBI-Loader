@@ -1,7 +1,7 @@
 %define module	Class-DBI-Loader
 %define name	perl-%{module}
-%define version 0.33
-%define release %mkrel 2
+%define version 0.34
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -10,7 +10,7 @@ Summary:	Dynamic definition of Class::DBI sub classes
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DM/DMAKI/%{module}-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/D/DM/DMAKI/%{module}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 BuildRequires:	perl-Lingua-EN-Inflect
