@@ -2,14 +2,14 @@
 %define upstream_version 0.34
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Dynamic definition of Class::DBI sub classes
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DM/DMAKI/%{upstream_name}-%{upstream_version}.tar.bz2
+URL:		https://metacpan.org/dist/Class-DBI-Loader
+Source0:	https://cpan.metacpan.org/authors/id/D/DM/DMAKI/Class-DBI-Loader-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
