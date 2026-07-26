@@ -1,15 +1,13 @@
 %define upstream_name	 Class-DBI-Loader
-%define upstream_version 0.34
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.34
+Release:	7
 
 Summary:	Dynamic definition of Class::DBI sub classes
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Class-DBI-Loader
-Source0:	https://cpan.metacpan.org/authors/id/D/DM/DMAKI/Class-DBI-Loader-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DM/DMAKI/Class-DBI-Loader-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ class names are defined by table names and namespace option.
 Class::DBI::Loader supports MySQL, Postgres and SQLite.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -48,8 +46,7 @@ make test
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.340.0-1mdv2011.0
 + Revision: 401706
-- rebuild using %%perl_convert_version
-- fixed license field
+- rebuild using %0.34 fixed license field
 
 * Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 0.34-3mdv2009.0
 + Revision: 255948
